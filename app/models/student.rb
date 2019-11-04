@@ -24,9 +24,6 @@ class Student
     end
 
     def grade_percentage
-        #get all tests
-        #filter by student
-        #divide passing tests by total
         tests = BoatingTest.all.select do |test|
         test.student == self
         end
