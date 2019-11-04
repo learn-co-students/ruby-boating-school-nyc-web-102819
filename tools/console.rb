@@ -8,6 +8,12 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
-binding.pry
-0 #leave this here to ensure binding.pry isn't the last line
+luke = Student.new("Luke")
 
+bob = Instructor.new("Bob")
+
+luke.add_boating_test("Test 1", "passed", bob)
+luke.add_boating_test("Test 2", "failed", bob)
+
+binding.pry
+#leave this here to ensure binding.pry isn't the last line
